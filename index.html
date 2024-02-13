@@ -73,11 +73,13 @@
 
                     
                   <div class="flex gap-3 "> 
-                    <input type="text" placeholder="W" class="w-[50px] border-[1px] border-[blue] p-1 ">
+                    <input id="rectanglelen" type="text" placeholder="W" class="w-[50px] border-[1px] border-[blue] p-1 ">
                     <span>cm</span>
-                    <input type="text" placeholder="I" class="w-[50px]  border-[1px] border-[blue] p-1">
+                    <input id="recwidth" type="text" placeholder="I" class="w-[50px]  border-[1px] border-[blue] p-1">
                     <span>cm</span>
                    </div>
+                      
+                   <p class="text-2xl">area:  <span id="rectanglearea"></span>   <span>cm<sup>2</sup></span>   </p>
 
                   <div class="card-actions">
                     <button onclick="rectangle()" class="btn btn-primary">calculate</button>
@@ -93,10 +95,19 @@
                   <img src="images/parallelogram.png" alt="Shoes" class="rounded-xl  " />
                 </figure>
                 <div class="card-body items-center text-center">
-                  <h2 class="card-title">Shoes!</h2>
-                  <p>If a dog chews shoes whose shoes does he choose?</p>
+                  <h2 class="card-title">Parallelogram</h2>
+                  <p>Area (A) = b X h</p>
+                  <div class="flex gap-3 "> 
+                    <input id="paralength" type="text" placeholder="W" class="w-[50px] border-[1px] border-[blue] p-1 ">
+                    <span>cm</span>
+                    <input id="parawidth" type="text" placeholder="I" class="w-[50px]  border-[1px] border-[blue] p-1">
+                    <span>cm</span>
+                   </div>
+                      
+                   <p class="text-2xl">area:  <span id="paraarea"></span>   <span>cm<sup>2</sup></span>   </p>
+
                   <div class="card-actions">
-                    <button class="btn btn-primary">Buy Now</button>
+                    <button onclick="paragram()" class="btn btn-primary">calculate</button>
                   </div>
                 </div>
               </div>
@@ -108,10 +119,20 @@
                   <img src="images/rhombus.png" alt="Shoes" class="rounded-xl" />
                 </figure>
                 <div class="card-body items-center text-center">
-                  <h2 class="card-title">Shoes!</h2>
-                  <p>If a dog chews shoes whose shoes does he choose?</p>
+                  <h2 class="card-title">Rhombus</h2>
+                  <p>Area (A) = 0.5 X D1 X D2</p>
+                  <div class="flex gap-3 "> 
+                    <input id="Rhombuslength" type="text" placeholder="W" class="w-[50px] border-[1px] border-[blue] p-1 ">
+                    <span>cm</span>
+                    <input id="Rhombuswidth" type="text" placeholder="I" class="w-[50px]  border-[1px] border-[blue] p-1">
+                    <span>cm</span>
+                   </div>
+                     
+                   <p class="text-2xl">area:  <span id="Rhombusarea"></span>   <span>cm<sup>2</sup></span>   </p>
+
+ 
                   <div class="card-actions">
-                    <button class="btn btn-primary">Buy Now</button>
+                    <button onclick="Rhombus()" class="btn btn-primary">calculate</button>
                   </div>
                 </div>
               </div>
@@ -123,10 +144,19 @@
                   <img src="images/pentagon.png" alt="Shoes" class="rounded-xl" />
                 </figure>
                 <div class="card-body items-center text-center">
-                  <h2 class="card-title">Shoes!</h2>
-                  <p>If a dog chews shoes whose shoes does he choose?</p>
+                  <h2 class="card-title">Pentagon</h2>
+                  <p>Area (A) = 0.5 X p X b</p>
+                  <div class="flex gap-3 "> 
+                    <input id="Pentagonlength" type="text" placeholder="W" class="w-[50px] border-[1px] border-[blue] p-1 ">
+                    <span>cm</span>
+                    <input id="Pentagonwidth" type="text" placeholder="I" class="w-[50px]  border-[1px] border-[blue] p-1">
+                    <span>cm</span>
+                   </div>
+
+                   <p class="text-2xl">area:  <span id="Pentagonarea"></span>   <span>cm<sup>2</sup></span>   </p>
+
                   <div class="card-actions">
-                    <button class="btn btn-primary">Buy Now</button>
+                    <button onclick="pentagon()" class="btn btn-primary">calculate</button>
                   </div>
                 </div>
               </div>
@@ -138,10 +168,21 @@
                   <img src="images/ellipse.png" alt="Shoes" class="rounded-xl" />
                 </figure>
                 <div class="card-body items-center text-center">
-                  <h2 class="card-title">Shoes!</h2>
-                  <p>If a dog chews shoes whose shoes does he choose?</p>
+                  <h2 class="card-title">Ellipse</h2>
+                  <p>Area (A) = A x b</p>
+
+                  <div class="flex gap-3 "> 
+                    <input id="Ellipselength" type="text" placeholder="W" class="w-[50px] border-[1px] border-[blue] p-1 ">
+                    <span>cm</span>
+                    <input id="Ellipsewidth" type="text" placeholder="I" class="w-[50px]  border-[1px] border-[blue] p-1">
+                    <span>cm</span>
+                   </div>
+
+                   <p class="text-2xl">area:  <span id="ellarea"></span>   <span>cm<sup>2</sup></span>   </p>
+
+
                   <div class="card-actions">
-                    <button class="btn btn-primary">Buy Now</button>
+                    <button onclick="Ellipse()" class="btn btn-primary">calculate</button>
                   </div>
                 </div>
               </div>
@@ -193,5 +234,13 @@
 
 <script src="rectangle.js"></script>
 
+<script src="Parallelogram.js"></script>
+
+<script src="Rhombus.js"></script>
+
+<script src="Ellipse.js"></script>
+
+
+  <script src="Pentagon.js"></script>
 </body>
 </html>

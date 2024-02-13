@@ -4,7 +4,7 @@ function triangelCal(){
 
    const triangelbases = document.getElementById('triangelbase');
 
-   const triangelbasetext = triangelbases.ariaValueMax;
+   const triangelbasetext = triangelbases.value
 
    const base = parseFloat(triangelbasetext)
 
@@ -12,7 +12,7 @@ function triangelCal(){
 
    const triangelheights = document.getElementById('triangelheight');
 
-  const triangelheighttext = triangelheights.ariaValueMax;
+  const triangelheighttext = triangelheights.value
    
   const height = parseFloat(triangelheighttext);
 
